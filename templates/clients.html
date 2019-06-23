@@ -1,0 +1,12 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Clientes - Desde Python con extends
+{% endblock %}
+{% block content%}
+<ul>
+    {% for item in list %}
+        <li>{{item}}</li>
+    {% endfor %}
+</ul>
+{% endblock%}

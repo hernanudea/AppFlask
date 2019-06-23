@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index desde Python</title>
+</head>
+
+<body>
+    <h3>Hola Mundo con Flask y Python!</h3>
+    <h4>Python es lo maximo!</h4>
+    <h4>El nombre es: {{nombre}}</h4>
+    <h4>La edad es: {{age}}</h4>
+    <h4>La lista es: {{myList}}</h4>
+
+    <!-- Condicionales -->
+    {% if age >= 18 %}
+    <h4>Eres mayor de edad!</h4>
+    {% endif %}
+
+    <!-- Ciclos -->
+    <ul>
+        {% for item in myList %}
+            <li>{{item}}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+
+</html>

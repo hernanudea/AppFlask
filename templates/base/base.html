@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index desde Python</title>
+    <title> 
+        {% block title %}
+        {% endblock %}
+    </title>
 </head>
 <body>
-    <h3>Hola Mundo con Flask y Python!</h3>
-    <h4>Python es lo maximo!</h4>    
+    <h3>Hola Mundo con Flask y Python, desde base!</h3>
+    
+    {% block content %}
+    {% endblock %}
+
 </body>
 </html>
