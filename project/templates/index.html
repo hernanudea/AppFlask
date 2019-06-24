@@ -7,3 +7,9 @@
 {% block content %}
     <h2>Hola Mundo</h2>
 {% endblock %}
+
+
+{% block content2 %}
+    {% from "_macro.html" import showListH %}
+    {{ showListH( title ) }}
+{% endblock %}
